@@ -13,10 +13,25 @@
      <!-- font awesome link end -->
      <!-- tailwind link start -->
      <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- tailwind font link -->
+     <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily:{
+                        manrope: ['Manrope', 'sans-sefif'],
+                    }
+                },
+            },
+        }
+     </script>
      <!-- tailwind link end -->
     <title>Tea House</title>
 </head>
-<body>
+<body class="font-manrope">
     <main class="max-w-screen-xl mx-auto px-16 lg:px28">
         <!-- header section -->
          <header class="lg:flex md:flex pt-10 mb-20">
